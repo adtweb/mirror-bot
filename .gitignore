@@ -1,0 +1,11 @@
+.vscode
+.idea
+.DS_Store
+
+venv
+.env
+
+*/__pycache__
+*/*/__pycache__
+
+bot.code-workspace
