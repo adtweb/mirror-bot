@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 
 import os
 import logging
@@ -43,7 +42,7 @@ def main():
     app.add_handler(CommandHandler('start', start_command))
     app.add_handler(CommandHandler('help', help_command))
 
-    # Message handler - now handles all text including Cyrillic
+    # Message handler
     app.add_handler(MessageHandler(
         (filters.TEXT | filters.CAPTION) & ~filters.COMMAND,
         mirror_message
